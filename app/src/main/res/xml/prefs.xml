@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="程序设置">
+        <SwitchPreference
+            android:key="switch_newthread"
+            android:title="线程化解包"
+            android:summary="开启此选项后每一条消息都会以一条新的线程处理，从而可以缓解消息阻塞的问题" />
+        <SwitchPreference
+            android:key="switch_silkencode"
+            android:title="语音转码"
+            android:summary="开启此选项可以提高音频体验，增加音频长度上限，但是会延长发送过程需要的时间，而且音频格式不对可能会导致程序崩溃" />
+		<SwitchPreference
+            android:key="switch_enableprivatereply"
+            android:title="开启词库私聊回复"
+            android:summary="开启私聊，包括好友和临时消息回复，可靠性未知" />
+		<SwitchPreference
+            android:key="switch_enablediscussreply"
+            android:title="开启词库讨论组回复"
+            android:summary="未测试" />
+		<SwitchPreference
+            android:key="switch_enableallgroupautomatically"
+            android:title="刷新群列表后自动开启全部群"
+            android:summary="配合更新群列表" />
+    </PreferenceCategory>
+    <!-- <PreferenceCategory -->  
+        <!-- android:title="授权地址"> -->  
+        <!-- <ListPreference -->  
+            <!-- android:key="authserver" -->  
+            <!-- android:title="登陆入口" -->  
+            <!-- android:summary="选择一个服务器" -->  
+            <!-- android:entries="@array/servers" -->  
+            <!-- android:entryValues="@array/hosts" -->  
+            <!-- android:dialogTitle="选择一个" /> -->
+    <!-- </PreferenceCategory> -->
+</PreferenceScreen>

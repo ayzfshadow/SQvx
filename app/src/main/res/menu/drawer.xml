@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/sq_devicesettings"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="设备信息设置" />
+        <item
+            android:id="@+id/sq_sqsettings"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="程序设置" />
+        <item
+            android:id="@+id/sq_auth"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="自助授权" />
+    </group>
+</menu>

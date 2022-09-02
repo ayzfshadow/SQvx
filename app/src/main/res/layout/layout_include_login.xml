@@ -1,0 +1,54 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+
+	<android.support.design.widget.AppBarLayout
+		android:id="@+id/appbarlayout_login"
+		android:layout_alignParentTop="true"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/AppTheme.AppBarOverlay"
+		android:layout_alignParentStart="true">
+		<android.support.v7.widget.Toolbar
+
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/toolbar_login"
+			android:background="@color/colorPrimary"
+			app:popupTheme="@style/AppTheme.PopupOverlay">
+
+		</android.support.v7.widget.Toolbar>
+
+	</android.support.design.widget.AppBarLayout>
+
+		<android.support.v4.widget.DrawerLayout
+			xmlns:app="http://schemas.android.com/apk/res-auto"
+			xmlns:tools="http://schemas.android.com/tools"
+			android:id="@+id/drawer_layout"
+			android:layout_below="@id/appbarlayout_login"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			>
+
+			<include 
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				layout="@layout/layout_include_login1">
+			</include>
+
+
+			<android.support.design.widget.NavigationView
+				android:id="@+id/nav_view"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_gravity="start"
+				android:fitsSystemWindows="true"
+				
+				app:headerLayout="@layout/nav_header_main"
+				app:menu="@menu/drawer" />
+		</android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

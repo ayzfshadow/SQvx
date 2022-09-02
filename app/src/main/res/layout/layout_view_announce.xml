@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:background="#FFFFFFFF"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent">
+   <TextView
+      android:textColor="@color/colorWhite"
+      android:id="@+id/announceview_title"
+      android:background="@color/colorPrimary"
+      android:paddingLeft="10dp"
+      android:paddingTop="10dp"
+      android:paddingBottom="10dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="公告"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentRight="true" />
+   <Button
+       android:id="@+id/announceview_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="知道了"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentBottom="true" />
+   <TextView
+      android:textColor="#FFFF0000"
+      android:gravity="center"
+       android:id="@+id/announceview_info"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="请仔细阅读以上内容"
+       android:layout_above="@id/announceview_button"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentEnd="true" />
+   <WebView
+       android:id="@+id/announceview_webview"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+       android:layout_above="@id/announceview_info"
+       android:layout_below="@id/announceview_title"
+      android:layout_alignParentStart="true" />
+</RelativeLayout>

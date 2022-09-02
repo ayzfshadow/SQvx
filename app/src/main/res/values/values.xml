@@ -1,0 +1,9 @@
+<resources>
+    <string-array name="servers">
+        <item>默认/法国高防</item>
+    </string-array>
+    <string-array name="hosts">
+        <item>http://www.ayzfshadow.com/SQvx/</item>
+    </string-array>
+</resources>
+

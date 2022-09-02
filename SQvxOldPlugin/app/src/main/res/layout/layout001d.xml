@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/back"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true">
+
+		<include
+			android:id="@+id/id0072"
+			android:layout_width="match_parent"
+			android:layout_height="150dp"
+			layout="@layout/layout001f"/>
+
+		<Button
+			android:textSize="20sp"
+			android:textColor="#FFFFFFFF"
+			android:id="@+id/id0074"
+			android:background="@drawable/drawable005d"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp"
+			android:text="Login"
+			android:layout_below="@+id/id0072"
+			android:layout_centerHorizontal="true"/>
+
+	</RelativeLayout>
+
+</RelativeLayout>
+

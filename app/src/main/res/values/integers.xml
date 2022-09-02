@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="integer0000">220</integer>
+    <integer name="integer0001">150</integer>
+    <integer name="integer0002">127</integer>
+    <integer name="integer0003">999</integer>
+</resources>

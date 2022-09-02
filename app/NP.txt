@@ -1,0 +1,5 @@
+**
+!android.**
+!com.setqq.script.Msg
+!com.setqq.script.sdk.IPlugin
+!com.setqq.script.sdk.PluginApiInterface

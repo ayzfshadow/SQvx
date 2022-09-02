@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/swiperefreshlayout_outer"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#FFFFFFFF"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="horizontal">
+
+		<android.support.v4.widget.SwipeRefreshLayout
+			android:id="@+id/swiperefreshlayout_dictionaryview"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1.0">
+
+			<ScrollView
+				android:id="@+id/swiperefreshlayout_scrollview"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:fillViewport="true"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/dictionary_cmd_review"
+					android:background="@android:drawable/editbox_background"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:text="下拉获取/刷新词库指令预览"/>
+
+			</ScrollView>
+
+		</android.support.v4.widget.SwipeRefreshLayout>
+
+		<android.support.v4.widget.SwipeRefreshLayout
+			android:id="@+id/swiperefreshlayout_dictionaryview_extra"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1.0">
+
+			<ScrollView
+				android:id="@+id/swiperefreshlayout_scrollview_extra"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:fillViewport="true"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/dictionary_cmd_review_extra"
+					android:background="@android:drawable/editbox_background"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:text="下拉获取/刷新词库指令预览"/>
+
+			</ScrollView>
+
+		</android.support.v4.widget.SwipeRefreshLayout>
+
+	</LinearLayout>
+
+	<android.support.design.widget.FloatingActionButton
+		android:id="@+id/dictionary_fab"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="16dp"
+		app:borderWidth="0dp"
+		android:src="@drawable/ic_add_circle_24dp"
+		app:backgroundTint="@color/colorPrimary"
+		app:layout_anchor="@id/swiperefreshlayout_dictionaryview"
+		app:layout_anchorGravity="bottom|center"/>
+
+	
+	<android.support.design.widget.FloatingActionButton
+		android:id="@+id/dictionary_fab_extra"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="16dp"
+		app:borderWidth="0dp"
+		android:src="@drawable/ic_add_circle_24dp"
+		app:backgroundTint="@color/colorPrimary"
+		app:layout_anchor="@id/swiperefreshlayout_dictionaryview_extra"
+		app:layout_anchorGravity="bottom|center"/>
+	
+</android.support.design.widget.CoordinatorLayout>
+

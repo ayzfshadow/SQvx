@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/drawable0067"
+	android:padding="5dp"
+	android:descendantFocusability="blocksDescendants"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<ImageView
+		android:id="@+id/imageview_pluginlist_item_logo"
+		android:layout_width="40dp"
+		android:layout_height="40dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginTop="5dp"
+		android:layout_marginRight="5dp"
+		android:scaleType="fitXY"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"/>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/imageview_pluginlist_item_inerlayout1">
+        
+ 
+	<TextView
+		android:ellipsize="marquee"
+		android:id="@+id/imageview_pluginlist_item_name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginRight="5dp"
+		android:text="appname"
+		android:maxEms="6"
+		android:singleLine="true"
+		android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:textColor="#FFFFFFFF"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:id="@+id/imageview_pluginlist_item_author"
+        android:background="@drawable/drawable0059"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="author"
+        android:maxEms="6"
+        android:singleLine="true"
+        android:layout_toRightOf="@id/imageview_pluginlist_item_inerlayout1"/>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageview_pluginlist_item_inerlayout1"
+        android:id="@+id/imageview_pluginlist_item_inerlayout2">
+	<TextView
+		android:ellipsize="marquee"
+		android:id="@+id/imageview_pluginlist_item_info"
+		android:scrollbars="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp"
+		android:text="info"
+		android:singleLine="true"
+		android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+    
+    
+	<TextView
+		android:textColor="#FFFFFFFF"
+		android:ellipsize="marquee"
+		android:gravity="center"
+		android:id="@+id/imageview_pluginlist_item_version"
+		android:background="@drawable/drawable0059"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="version"
+		android:maxEms="6"
+		android:singleLine="true"
+		android:layout_alignLeft="@id/imageview_pluginlist_item_switch"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true"/>
+
+	<android.support.v7.widget.SwitchCompat
+		android:id="@+id/imageview_pluginlist_item_switch"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		
+		android:layout_alignBottom="@id/imageview_pluginlist_item_logo"
+		android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+
+	<com.saki.ui.view.DownloadButton
+		android:id="@+id/imageview_pluginlist_item_download"
+		android:layout_width="match_parent"
+		android:layout_height="20dp"
+		android:layout_marginTop="2dp"
+		android:layout_below="@id/imageview_pluginlist_item_inerlayout2"
+		android:layout_alignStart="@id/imageview_pluginlist_item_logo"/>
+
+</RelativeLayout>
+

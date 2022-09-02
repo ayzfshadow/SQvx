@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.demo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+		android:theme = "@android:style/Theme.NoTitleBar">
+        <meta-data android:name="vxpluginclass" android:value="saki.ui.Demo"/>
+        <meta-data android:name="author" android:value="saki"/>
+        <meta-data android:name="info" android:value="This is Demo"/>
+        <meta-data android:name="jump" android:value="true"/>
+        <!-- 插件UI注册 -->
+        <activity android:name="saki.ui.UI">
+            <intent-filter >
+                <!-- 主程序跳转 -->
+                <action android:name="saki.setqq.plugin.v8.main"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <!-- 桌面图标 -->
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+         </activity>
+    </application>
+
+</manifest>

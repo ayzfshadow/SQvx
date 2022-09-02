@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:descendantFocusability="blocksDescendants"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<ImageView
+		android:id="@+id/group_header_image"
+		android:layout_width="40dp"
+		android:layout_height="40dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="10dp"
+		android:src="@drawable/drawable0061"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"/>
+
+	<TextView
+		android:ellipsize="end"
+		android:id="@+id/group_name_textview"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="16dp"
+		android:layout_marginRight="20dp"
+		android:text="default_name"
+		android:lines="1"
+		android:layout_toLeftOf="@id/group_messagecount_textview"
+		android:layout_toRightOf="@id/group_header_image"
+		android:layout_alignTop="@id/group_header_image"/>
+
+	<TextView
+		android:textColor="#FFFFFFFF"
+		android:gravity="center"
+		android:id="@+id/group_messagecount_textview"
+		android:background="@drawable/drawable0057"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginRight="8dp"
+		android:text="0"
+		android:layout_alignRight="@id/group_switchbutton_textview"
+		android:layout_alignBottom="@id/group_name_textview"/>
+
+	<TextView
+		android:id="@+id/group_id_textview"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp"
+		android:text="0"
+		android:layout_below="@id/group_name_textview"
+		android:layout_alignLeft="@id/group_name_textview"/>
+
+	<android.support.v7.widget.SwitchCompat
+		android:id="@+id/group_switchbutton_textview"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginRight="8dp"
+		android:layout_below="@id/group_messagecount_textview"
+		android:layout_alignBottom="@id/group_id_textview"
+		android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
+

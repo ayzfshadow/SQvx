@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+<android.support.design.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/swiperefreshlayout_outer"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#FFFFFFFF"
+	android:orientation="vertical">
+
+	<include
+        android:id="@+id/layout_dicimportrelative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/layout_include_dicimport"/>
+
+	<android.support.design.widget.FloatingActionButton
+		android:id="@+id/layout_dicimportfab"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="16dp"
+		app:borderWidth="0dp"
+		app:backgroundTint="@color/colorPrimary"
+		app:layout_anchor="@id/layout_dicimportrelative"
+		app:layout_anchorGravity="bottom|center"/>
+
+	<TextView
+		android:id="@+id/layout_dicimportfabtext"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="选择"
+		android:elevation="6dp"
+		android:textSize="18dp"
+		android:textColor="#fff"
+		app:layout_anchor="@id/layout_dicimportfab"
+		app:layout_anchorGravity="center"/>
+
+</android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

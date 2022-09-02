@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:gravity="center">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:gravity="center">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<android.support.design.widget.TextInputLayout
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/layoutactivitysqauthactivityTextInputLayout1">
+
+				<EditText
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:hint="QQ号"
+					android:inputType="number"
+					android:id="@+id/layoutactivitysqauthactivityEditTextLookAuth"/>
+
+			</android.support.design.widget.TextInputLayout>
+
+			<android.support.v7.widget.AppCompatButton
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="12dp"
+				android:text="查询授权"
+				android:layout_weight="1.0"
+				android:id="@+id/layoutactivitysqauthactivityAppCompatButtonLookAuth"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<android.support.design.widget.TextInputLayout
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/layoutactivitysqauthactivityTextInputLayout1">
+
+				<EditText
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:hint="卡密"
+					android:inputType="textPassword"
+					android:id="@+id/layoutactivitysqauthactivityEditTextLookKey"/>
+
+			</android.support.design.widget.TextInputLayout>
+
+			<android.support.v7.widget.AppCompatButton
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="24dp"
+				android:layout_marginBottom="24dp"
+				android:padding="12dp"
+				android:text="查询卡密"
+				android:layout_weight="1.0"
+				android:id="@+id/layoutactivitysqauthactivityAppCompatButtonLookKey"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<android.support.design.widget.TextInputLayout
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/layoutactivitysqauthactivityTextInputLayout1">
+
+				<EditText
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:hint="QQ号"
+					android:inputType="number"
+					android:id="@+id/layoutactivitysqauthactivityEditTextUseKeyQQ"/>
+
+			</android.support.design.widget.TextInputLayout>
+
+			<android.support.design.widget.TextInputLayout
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:layout_marginBottom="8dp"
+				android:id="@+id/layoutactivitysqauthactivityTextInputLayout1">
+
+				<EditText
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:hint="卡密"
+					android:inputType="textPassword"
+					android:id="@+id/layoutactivitysqauthactivityEditTextUseKeyKey"/>
+
+			</android.support.design.widget.TextInputLayout>
+
+			<android.support.v7.widget.AppCompatButton
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="12dp"
+				android:text="使用卡密"
+				android:layout_weight="1.0"
+				android:id="@+id/layoutactivitysqauthactivityAppCompatButtonUseKey"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<android.support.design.widget.TextInputLayout
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/layoutactivitysqauthactivityTextInputLayout1">
+
+				<EditText
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:hint="源授权QQ"
+					android:inputType="number"
+					android:id="@+id/layoutactivitysqauthactivityEditTextTransferOriginQQ"/>
+
+			</android.support.design.widget.TextInputLayout>
+
+			<android.support.design.widget.TextInputLayout
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/layoutactivitysqauthactivityTextInputLayout1">
+
+				<EditText
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:hint="新授权QQ"
+					android:inputType="number"
+					android:id="@+id/layoutactivitysqauthactivityEditTextTransferTargetQQ"/>
+
+			</android.support.design.widget.TextInputLayout>
+
+			<android.support.design.widget.TextInputLayout
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/layoutactivitysqauthactivityTextInputLayout1">
+
+				<EditText
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:hint="源卡密"
+					android:inputType="textPassword"
+					android:id="@+id/layoutactivitysqauthactivityEditTextTransferOtiginKey"/>
+
+			</android.support.design.widget.TextInputLayout>
+
+			<android.support.v7.widget.AppCompatButton
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="12dp"
+				android:text="授权转移"
+				android:layout_weight="1.0"
+				android:id="@+id/layoutactivitysqauthactivityAppCompatButtonTransfer"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+

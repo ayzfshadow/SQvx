@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		androidid="@+id/relative_layout"
+		android:background="#FFFFFFFF">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="24dp"
+			android:paddingRight="24dp"
+			android:layout_centerInParent="true">
+
+			<include
+				android:id="@+id/linearlayout_login_input"
+				android:layout_width="match_parent"
+				android:layout_height="150dp"
+				layout="@layout/layout_include_logininput"/>
+
+			<include
+				android:id="@+id/linearlayout_login_roundimage"
+				android:visibility="gone"
+				android:layout_width="match_parent"
+				android:layout_height="150dp"
+				layout="@layout/layout_include_roundimage_login"/>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/linearlayout_login_input">
+
+				<android.support.v7.widget.AppCompatButton
+					android:id="@+id/button_login"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:text="Login"
+					android:layout_weight="1.0"/>
+
+				<android.support.v7.widget.AppCompatButton
+					android:id="@+id/button_super_login"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+				
+					android:text="Relogin"
+					
+					android:layout_weight="1.0"/>
+
+			</LinearLayout>
+
+		</RelativeLayout>
+
+		<com.saki.ui.view.UpdateView
+			android:id="@+id/login_update_view"
+			android:layout_width="match_parent"
+			android:layout_height="30dp"
+			android:layout_below="@id/relative_layout"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentEnd="true"/>
+
+	</RelativeLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,92 @@
+apply plugin: 'com.android.application'
+apply plugin: 'proguard'
+apply plugin: 'stringfog'
+
+stringfog{
+	enable true
+	maxTextLength 500
+}
+
+
+android {
+    signingConfigs {
+        debug {
+            storeFile file('E:\\ayzf\\dev-Sign\\ayzf.jks')
+            storePassword 'ayzf1314'
+            keyAlias 'ayzf'
+            keyPassword 'ayzf1314'
+        }
+        release {
+        storeFile file('E:\\ayzf\\dev-Sign\\ayzf.jks')
+            storePassword 'ayzf1314'
+            keyAlias 'ayzf'
+            keyPassword 'ayzf1314'
+        }
+    }
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.ayzf.sqvx"
+        minSdkVersion 14
+        targetSdkVersion 28
+        versionCode 6
+        versionName "1.5"
+    }
+    dexOptions {
+       preDexLibraries true
+       javaMaxHeapSize "2g"
+    }
+
+	lintOptions {          
+	    disable "UnsafeExperimentalUsageError",
+                    "UnsafeExperimentalUsageWarning"
+	    abortOnError false
+    }
+    
+    buildTypes {
+        release {
+            //signingConfig  signingConfigs.myConfig
+            minifyEnabled false
+            
+			shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules-release.pro'
+        }
+        debug {
+            //signingConfig  signingConfigs.myConfig
+            minifyEnabled false
+            
+			shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules-debug.pro'
+        }
+	}
+    dependenciesInfo {
+        includeInApk true
+        includeInBundle true
+    }
+}
+
+
+
+dependencies {
+	implementation 'com.android.support:multidex:+'
+	//noinspection GradleCompatible
+	implementation 'com.android.support:design:26.+'
+	//noinspection GradleCompatible
+	implementation 'com.android.support:support-media-compat:26.+'
+	//noinspection GradleCompatible
+	implementation 'com.android.support:appcompat-v7:26.+'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':silk_lib')
+}
+
+proguard {
+    configurations {
+        release {
+            defaultConfiguration 'proguard-android-optimize.txt'
+            configuration 'proguard-project-release.txt'
+        }
+        debug {
+            defaultConfiguration 'proguard-android-optimize.txt'
+            configuration 'proguard-project-debug.txt'
+        }
+    }
+}

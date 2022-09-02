@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout_dicimportrelative"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:layout_weight="1.0">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal"
+		android:layout_weight="1.0">
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:fillViewport="true"
+			android:orientation="vertical"
+			android:id="@+id/dicimport_ScrollView">
+
+			<TextView
+				android:id="@+id/dicimport_info"
+				android:scrollbars="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:text=""/>
+
+		</ScrollView>
+
+	</LinearLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<RadioButton
+			android:id="@+id/dicimport_buttonmerge"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:checked="true"
+			android:text="合并"
+			android:layout_alignParentLeft="true"/>
+
+		<RadioButton
+			android:id="@+id/dicimport_buttoncover"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="覆盖"
+            android:layout_toRightOf="@id/dicimport_buttonmerge"/>
+
+		<RadioButton
+			android:id="@+id/dicimport_buttonreplace"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="新替换"
+            android:layout_toLeftOf="@id/dicimport_buttonextend"/>
+
+		<RadioButton
+			android:id="@+id/dicimport_buttonextend"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:checked="true"
+			android:text="旧保留"
+			android:layout_alignParentRight="true"/>
+
+	</RelativeLayout>
+
+</LinearLayout>
+

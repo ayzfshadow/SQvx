@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<style name="TabText">
+        <item name="android:textSize">14sp</item>
+    </style>
+	<!-- Base application theme. -->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+       
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="ErrorTheme" parent="Base.Theme.AppCompat">
+        <!--顶部通知栏颜色-->
+        <item name="colorPrimaryDark">@color/black</item>
+        <!--顶部导航栏颜色-->
+        <item name="colorPrimary">@color/black</item>
+        <!--底部导航栏颜色-->
+        <item name="android:navigationBarColor">@color/black</item>
+        <!-- 默认颜色 -->
+        <item name="colorAccent">@color/black</item>
+    </style>
+
+    <style name="TextAppearance.Design.Snackbar" parent="android:TextAppearance" >
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+
+
+
+</resources>

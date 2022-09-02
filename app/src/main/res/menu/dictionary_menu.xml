@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <item
+        android:id="@+id/menu_item_editdic"
+        android:title="编辑词库"
+        app:showAsAction="never" 
+    ></item>
+    
+    <item
+        android:id="@+id/menu_item_encryptdic"
+        android:title="加密词库"
+        app:showAsAction="never" 
+    ></item>
+
+    <item
+        android:id="@+id/menu_item_editencoding"
+        android:title="修改编码"
+        app:showAsAction="never" 
+    ></item>    
+    
+    <item
+        android:id="@+id/menu_item_editmaster"
+        android:title="设置主人"
+        app:showAsAction="never" 
+    ></item>
+    
+    <item
+        android:id="@+id/menu_item_editblacklist"
+        android:title="设置拉黑"
+        app:showAsAction="never" 
+    ></item>
+</menu>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	 <item type="id" name="group_switchbutton_textview" />
+		  <item type="id" name="group_messagecount_textview" />
+			   <item type="id" name="logview_announcebutton" />
+				    <item type="id" name="logview_cleanbutton" />
+    <item type="id" name="login_update_view" />
+    <item type="id" name="listview_pluginlistview" />
+        <item type="id" name="id0000" />
+    <item type="id" name="imageview_pluginlist_item_switch" />
+    
+    <item type="id" name="dicimport_buttonextend" />
+  
+</resources>
